@@ -1,0 +1,24 @@
+{
+  "name": "bootstrapsample",
+  "version": "1.0.0",
+  "description": "bootstrapsample of description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass css/main.scss css/main.css",
+    "compress-sass": "node-sass css/main.scss css/main.min.css --output-style compressed"
+  },
+  "repository": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}

@@ -1,0 +1,18 @@
+1. exec npm init
+npm init
+
+2. exec npm install
+npm install --save bootstrap
+npm install --save-dev node-sass
+
+3. edit npm script
+  "scripts": {
+    (省略)
+    "compile-sass": "node-sass css/main.scss css/main.css",
+    "compress-sass": "node-sass css/main.scss css/main.min.css --output-style compressed"
+    (省略)
+  }
+
+4. exec npm script
+npm run compile-sass
+npm run compress-sass
