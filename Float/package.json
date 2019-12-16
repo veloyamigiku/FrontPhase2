@@ -1,0 +1,19 @@
+{
+  "name": "float",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass css/main.scss css/main.css",
+    "compress-sass": "node-sass css/main.scss css/main.min.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

@@ -1,0 +1,29 @@
+.clearfix {
+
+    &__element--yellow {
+        background-color: yellow;
+        width: 200px;
+        height: 250px;
+        /*
+        floatは回り込ませを設定する。
+        leftは「要素を左側に寄せて」、「右側に回り込ませる」。
+        rightは「要素を右側に寄せて」、「左側に回りこませる」。
+        */
+        float: right;
+    }
+
+    &__element--green {
+        background-color: green;
+        width: 150px;
+        height: 100px;
+        float: left;
+    }
+
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    /* clearは、回り込みを解除する。 */
+    clear: both;
+}
