@@ -1,0 +1,86 @@
+.grid-body {
+    
+    /* グリッドレイアウトを利用する。 */
+    display: grid;
+    margin: 0;
+
+    /* vhは、
+    ビューポート（ブラウザ表示領域）の縦方向の割合（%）
+    を指定する。
+    */
+    min-height: 100vh;
+
+    /*
+    grid-template-rowsは、
+    グリッドレイアウトの行数、行間
+    を設定する。
+    */
+    /* frは、残り幅を指す。 */
+    grid-template-rows: 100px 1fr 100px;
+    
+    /*
+    grid-template-columnsは、
+    グリッドレイアウトの列数、列幅
+    を設定する。
+    */
+    grid-template-columns: 100px 1fr;
+
+    %__element {
+        margin: 3px;
+        padding: 10px;
+    }
+
+    &__h1 {
+
+        @extend %__element;
+        
+        /*
+        grid-rowは、
+        スタイルが適用されるアイテムを割り当てる行方向の位置（開始・終了）
+        をスラッシュ区切りで指定する。
+        位置の開始番号は1とする。
+        */
+        grid-row: 1;
+        
+        /*
+        grid-columnは、
+        スタイルが適用されるアイテムを割り当てる列方向の位置（開始・終了）
+        をスラッシュ区切りで指定する。
+        */
+        /* spanは、開始から指定数分先の位置を終了位置とする。 */
+        grid-column: 1 / span 2;
+        background-color: #faa;
+        border-radius: 10px 10px 0 0;
+
+    }
+
+    &__main {
+
+        @extend %__element;
+        
+        grid-row: 2;
+        grid-column: 2;
+        background: #afa;
+
+    }
+
+    &__nav {
+
+        @extend %__element;
+
+        grid-row: 2;
+        grid-column: 1;
+        background-color: #aaf;
+    }
+
+    &__footer {
+
+        @extend %__element;
+        
+        grid-row: 3;
+        grid-column: 1 / span 2;
+        background-color: #aaa;
+        border-radius: 0 0 10px 10px;
+    }
+
+}
