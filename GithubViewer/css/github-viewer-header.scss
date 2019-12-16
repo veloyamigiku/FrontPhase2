@@ -1,0 +1,12 @@
+
+.github-viewer-header {
+    /* ヘッダを絶対位置指定する。 */
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    
+    font-size: 1.0em;
+    font-weight: bold;
+    color: rgb(111, 0, 255);
+    background-color: rgb(229, 255, 229);
+}
