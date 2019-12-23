@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pomodoro</title>
+        <link rel="stylesheet" href="css/html5reset-1.6.1.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <!-- タイマー表示領域 -->
+        <div class="timer-display">
+            <div class="timer-display__mm">12</div>
+            <div class="timer-display__sep">:</div>
+            <div class="timer-display__ss">34</div>
+        </div>
+        <!-- タイマーボタン領域 -->
+        <div class="timer-button">
+            <div class="timer-button__start">Start</div>
+            <div class="timer-button__stop">Stop</div>
+            <div class="timer-button__clear">Clear</div>
+            <div class="timer-button__setup">Setup</div>
+        </div>
+        <!-- タイマー設定領域 -->
+        <div class="timer-setting">
+            <div class="timer-setting__row">
+                <label class="timer-setting__mm-label">分：</label>
+                <input type="text" class="timer-setting__mm-input" value="12"></input>
+            </div>
+            <div class="timer-setting__row">
+                <label class="timer-setting__ss-label">秒：</label>
+                <input type="text" class="timer-setting__ss-input" value="34"></input>
+            </div>
+            <div class="timer-setting__row">
+                <div class="timer-setting__setup-done">Done</div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

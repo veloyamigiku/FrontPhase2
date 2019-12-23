@@ -1,0 +1,70 @@
+/* タイマー（ボタン領域）のスタイル。 */
+.timer-button {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+
+    /* タイマー（ボタン領域）の要素の共通スタイル。 */
+    %__element {
+        background-color: blue;
+        color: antiquewhite;
+        font-size: 5.0em;
+        padding: 20px;
+        margin: 20px 15px;
+        border-radius: 15px;
+        border: none;
+        text-align: center;
+    }
+
+    /* タイマー開始ボタンのスタイル。 */
+    &__start {
+
+        @extend %__element;
+
+    }
+
+    /* タイマー停止ボタンのスタイル。 */
+    &__stop {
+
+        @extend %__element;
+
+        display: none;
+    }
+
+    /* タイマークリアボタンのスタイル。 */
+    &__clear {
+
+        @extend %__element;
+
+    }
+
+    /* タイマー設定ボタンのスタイル。 */
+    &__setup {
+
+        @extend %__element;
+
+    }
+
+    /* タイマー開始ボタンのスタイル（hover）。 */
+    &__start:hover {
+        opacity: 0.5;
+    }
+
+    /* タイマー停止ボタンのスタイル（hover）。 */
+    &__stop:hover {
+        opacity: 0.5;
+    }
+
+    /* タイマークリアボタンのスタイル（hover）。 */
+    &__clear:hover {
+        opacity: 0.5;
+    }
+
+    /* タイマー設定ボタンのスタイル（hover）。 */
+    &__setpu:hover {
+        opacity: 0.5;
+    }
+
+}

@@ -1,0 +1,37 @@
+/* タイマー表示領域のスタイル。 */
+.timer-display {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+
+    /* タイマー表示領域の要素の共通スタイル。 */
+    %__element {
+        font-size: 10.0em;
+        text-align: center;
+    }
+
+    /* タイマー（分）のスタイル。 */
+    &__mm {
+        
+        @extend %__element;
+
+    }
+
+    /* タイマー（区切り）のスタイル。 */
+    &__sep {
+
+        @extend %__element;
+
+    }
+
+    /* タイマー（秒）のスタイル。 */
+    &__ss {
+        
+        @extend %__element;
+        
+    }
+
+}
+
