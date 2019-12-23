@@ -1,0 +1,48 @@
+/* 入力領域のスタイル */
+.todo-input {
+
+    /* 入力領域の上下の余白 */
+    margin: 20px 0px;
+
+    /* Todo入力要素のスタイル */
+    &__content {
+
+        display: inline-block;
+        /* 余白 */
+        margin: 0px 5px;
+        padding: 5px;
+        font-size: 1.5em;
+        width: 1000px;
+
+    }
+
+    /* Todo追加ボタンのスタイル */
+    &__addBtn {
+
+        display: inline-block;
+        width: 100px;
+        border-radius: 5px;
+        /* 色 */
+        background-color: #15179c;
+        color: #a095be;
+        font-size: 1.5em;
+        /* テキストの配置 */
+        text-align: center;
+        /* 余白 */
+        margin: 0px 5px;
+        padding: 10px;
+        /* 配置 */
+        vertical-align: middle;
+
+    }
+
+    /* Todo追加ボタン（hover）のスタイル */
+    &__addBtn:hover {
+
+        /* 色 */
+        background-color: #7679f8
+        
+    }
+
+}
+

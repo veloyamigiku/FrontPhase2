@@ -1,0 +1,131 @@
+/* Todoリストのスタイル。 */
+.todo-list {
+
+    /* Todoのスタイル */
+    &__todo {
+
+        /* 余白 */
+        margin: 5px;
+
+    }
+
+    /* Todoの共通スタイル */
+    %__todo-element {
+        /* 余白 */
+        margin: 0px 5px;
+        padding: 10px;
+    }
+
+    /* Todoテキストのスタイル */
+    %__todo-text {
+
+        display: inline-block;
+        /* テキストのサイズ */
+        font-size: 1.5em;
+        width: 1000px;
+
+    }
+
+    /* Todoボタンのスタイル */
+    %__todo-btn {
+
+        display: inline-block;
+        /* 幅 */
+        width: 100px;
+        border-radius: 5px;
+        /* 色 */
+        background-color: #15179c;
+        color: #a095be;
+        /* ボタンテキストのサイズ */
+        font-size: 1.5em;
+        /* ボタンテキストの配置 */
+        text-align: center;
+        /* 配置 */
+        vertical-align: middle;
+
+    }
+
+    /* Todoボタン（hover）のスタイル */
+    %__todo-btn-hover {
+
+        background-color: #7679f8
+
+    }
+
+    /* Todoテキストのスタイル */
+    &__content {
+
+        @extend %__todo-element;
+        @extend %__todo-text;
+
+    }
+
+    /* Todo入力領域のスタイル */
+    &__edit-content {
+
+        @extend %__todo-element;
+        @extend %__todo-text;
+
+    }
+
+    /* Todo編集ボタンのスタイル */
+    &__edit-btn {
+
+        @extend %__todo-element;
+        @extend %__todo-btn;
+
+    }
+
+    /* Todo編集ボタン（hover）のスタイル */
+    &__edit-btn:hover {
+
+        @extend %__todo-btn-hover;
+
+    }
+
+    /* Todo削除ボタンのスタイル */
+    &__delete-btn {
+
+        @extend %__todo-element;
+        @extend %__todo-btn;
+
+    }
+
+    /* Todo削除ボタン（hover）のスタイル */
+    &__delete-btn:hover {
+
+        @extend %__todo-btn-hover;
+        
+    }
+
+    /* Todo編集キャンセルボタンのスタイル */
+    &__edit-cancel-btn {
+
+        @extend %__todo-element;
+        @extend %__todo-btn;
+
+    }
+
+    /* Todo編集キャンセルボタン（hover）のスタイル */
+    &__edit-cancel-btn:hover {
+
+        @extend %__todo-btn-hover;
+        
+    }
+
+    /* Todo編集確定ボタンのスタイル */
+    &__edit-commit-btn {
+
+        @extend %__todo-element;
+        @extend %__todo-btn;
+
+    }
+
+    /* Todo編集確定ボタン（hover）のスタイル */
+    &__edit-commit-btn:hover {
+
+        @extend %__todo-btn-hover;
+        
+    }
+
+}
